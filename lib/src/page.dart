@@ -1,8 +1,6 @@
 import 'dart:io';
-import 'dart:ui';
 import 'package:advance_pdf_viewer_fork/src/zoom.dart';
 import 'package:flutter/widgets.dart';
-import 'package:flutter/painting.dart';
 
 class PDFPage extends StatefulWidget {
   final String? imgPath;
