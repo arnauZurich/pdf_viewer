@@ -8,7 +8,7 @@ buildscript {
     }
 
     dependencies {
-        classpath 'com.android.tools.build:gradle:7.4.2'
+        classpath 'com.android.tools.build:gradle:8.11.1'
     }
 }
 
@@ -23,18 +23,17 @@ apply plugin: 'com.android.library'
 
 android {
     namespace 'pt.tribeiro.flutter_plugin_pdf_viewer'
-    compileSdk 33
+    compileSdk 36
 
     defaultConfig {
         minSdkVersion 21
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
-    lintOptions {
+    lint {
         disable 'InvalidPackage'
     }
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_17
         targetCompatibility JavaVersion.VERSION_17
     }
-    ndkVersion '26.3.11579264'
 }
